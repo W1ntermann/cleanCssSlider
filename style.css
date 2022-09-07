@@ -1,0 +1,17 @@
+.body {
+    background: coral;
+}
+.container {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    gap: 12px;
+    scroll-padding: 10px;
+    cursor: pointer;
+}
+.container .item {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
